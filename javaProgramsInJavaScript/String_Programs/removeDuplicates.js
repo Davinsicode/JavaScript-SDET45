@@ -1,16 +1,26 @@
-let str = "testyantra"
- value = str.split('')
-for(let i =0; i<value.length; i++)
+let stringvalue = "testyantra"
+// splittedvalue = stringvalue.split('')
+for(i=0; i<stringvalue.length; i++)
 {
-    for(let j=i+1; j<value.length; j++)
+    count = 0
+    for(j=0; j<stringvalue.length;j++)
     {
-        if(value[i]==value[j])
+        if(stringvalue[i]==stringvalue[j])
         {
-            value.splice(j,1)
+            if(j<i)
+            {
+             break
+            }
+            count++
         }
-      
     }
+    if(count>1)
+    {
+        // console.log(stringvalue[i]);
+    }
+    else
+     {
+        console.log(stringvalue[i]);
+     }
     
 }
-
-console.log(value);
