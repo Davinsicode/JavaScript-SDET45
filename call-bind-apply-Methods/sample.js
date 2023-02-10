@@ -55,13 +55,15 @@ information.call(customer1) // Borrowing the parameters from another object */
 {
     firstName : "Suresh",
     lastName : "Kumar",
-    adress : function()
+    adress : function(permanentAddress, tempraryAddress)
             {
-                permanentAddress = "TamilNadu"
-                tempraryAddress = "Karnataka"
+                
 console.log(`
 First Name: ${this.firstName}
 Last Name: ${this.lastName}
+Permanent Address: ${permanentAddress}
+Temprary Address: ${tempraryAddress}
+
 `);
             }
 }
@@ -84,8 +86,8 @@ Temprary Address: ${tempraryAddress}
             }
     
 }
-
-var data = customer1.adress.bind(customer2) // --> it will not involke the method directly we need to create reference variable for that module invoke that ref variable
+//--> Passing parameter by using " " double quotes
+var data = customer1.adress.bind(customer2, "TamilNadu", "Karnataka") // --> it will not involke the method directly we need to create reference variable for that module invoke that ref variable
 data() */
 
 /* **************************************************************************************************** */
@@ -112,10 +114,9 @@ let customer2 =
 {
     firstName : "Suresh",
     lastName : "Roshan",
-    adress : function()
+    adress : function(permanentAddress, tempraryAddress)
             {
-                permanentAddress = "TamilNadu"
-                tempraryAddress = "Kerala"
+                
 console.log(`
 First Name: ${this.firstName}
 Last NAme: ${this.lastName}
@@ -125,3 +126,5 @@ Temprary Address: ${tempraryAddress}
             }
     
 }
+//--> Passing parameter by using " " double quotes with Array ["a", "b"]
+customer2.adress.apply(customer1, ["TamilNadu", "Karnataka"])
