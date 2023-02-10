@@ -20,6 +20,6 @@ class sample
     }
 
 }
-sample.demo() // we can call the static method directly
-
-new sample("Suresh", 07).demo2() // 
+// sample.demo() // we can call the static method directly
+console.log(sample.b);
+// new sample("Suresh", 07).demo2() // 

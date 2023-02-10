@@ -21,4 +21,4 @@ this.data = data
     }
 }
 console.log(new sample("javaScript").getter());
-// console.log(ref.getter());
+// console.log(ref.getter()); 
