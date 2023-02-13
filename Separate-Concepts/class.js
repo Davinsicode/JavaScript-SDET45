@@ -20,6 +20,5 @@ class sample
     }
 
 }
-// sample.demo() // we can call the static method directly
-console.log(sample.b);
-// new sample("Suresh", 07).demo2() // 
+ ref=new sample()
+ sample.demo2()
