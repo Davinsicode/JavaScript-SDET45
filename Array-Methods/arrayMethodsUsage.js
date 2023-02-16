@@ -85,3 +85,11 @@ function findMethod()
 // console.log(array1);
 // 15 
 //console.log(array1.reverse());
+// 16
+let value = [5,3,6,4,7]
+// console.log(value.sort((a,b)=>(a-b))); //--<Ascending
+// value.sort((a,b)=>(b-a)) // Descending Order
+
+// Concat is not modify the array
+// console.log(value.concat(value2=["hello"]));
+// console.log(value);

@@ -58,7 +58,7 @@ information.call(customer1) // Borrowing the parameters from another object */
     adress : function(permanentAddress, tempraryAddress)
             {
                 
-console.log(`
+console.log(` 
 First Name: ${this.firstName}
 Last Name: ${this.lastName}
 Permanent Address: ${permanentAddress}

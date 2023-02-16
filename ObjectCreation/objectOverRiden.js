@@ -12,5 +12,4 @@ let signUP = {
 // Tranfer the object from one object to another object
 createAccount = Object.create(signUP)
 createAccount.lastName = "Roshan" // Achieve OverRide
-// console.log(createAccount.lastName);
-console.log(signUP.lastName);
+console.log(createAccount.lastName);

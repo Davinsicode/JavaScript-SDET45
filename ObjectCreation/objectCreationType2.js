@@ -1,5 +1,5 @@
 // With this keyword
-// When the Property is constant then we will go for the TYPE2
+// When the Property is constant value is dynamic then we will go for the TYPE2
 function packageDetails(name, price, status)
 {
     this.name = name

@@ -1,4 +1,4 @@
-// When the Property is not constant then we will go for the TYPE1
+// When the Property and value is not constant then we will go for the TYPE1
 let TSM  = 
 {
     createPackage: "Package Created Successfully",

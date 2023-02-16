@@ -1,24 +1,23 @@
-"use strict" // It is used to restrict accessing the private data through getters()
-// Note: 1
-// if the variable is private if we try to initialize the value we will not get any value 
-// and also it will not throw any error
-// if the variable is not private if we try to initialize the value we will get the value
-
-// Note: 2
-// if we access the getter like new className().getters() --> we will get the value
-// if we access the getter like ref = new className() --> ref.getters() --> it will throw reference error
+"use strict" //--> if we use "use strict" ref variable is not working it will restrict the ref variable
 class sample
 {
-    data = ""
-    #value ="hello"
-    getter()
+    #name = "Suresh"
+    get()
     {
-        return this.data
+        return this.#name
     }
-    constructor(data)
+    set(name)
     {
-this.data = data
+        this.#name = name
     }
 }
-console.log(new sample("javaScript").getter());
-// console.log(ref.getter()); 
+
+// Note: These set of codes not workin bcoz of the "use strict"
+/* ref = new sample()
+console.log(ref.get());
+ref.set("Roshan")
+console.log(ref.get()); */
+
+console.log(new sample().get());  
+new sample().set("Roshan") // --> we can fetch the private value but we can't reinitialize the value
+console.log(new sample().get());
