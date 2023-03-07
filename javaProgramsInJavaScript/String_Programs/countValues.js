@@ -15,14 +15,14 @@ for(let i=0; i<value.length; i++)
     }
     if(count>=1)
     {
-       if(value[i]=='a' || value[i]=='e' || value[i]=='i' || value[i]=='o' || value[i]=='u')
+       /* if(value[i]=='a' || value[i]=='e' || value[i]=='i' || value[i]=='o' || value[i]=='u')
        {
              console.log(value[i]+"--->"+count);
        }
        else
        {
         console.log(value[i]+"--->"+count);
-       }
-        
+       } */
+       console.log(value[i]+"--->"+count);
     }
 }

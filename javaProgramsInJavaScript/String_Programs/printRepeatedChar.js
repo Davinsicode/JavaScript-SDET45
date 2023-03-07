@@ -13,7 +13,7 @@ for(let i=0; i<value.length; i++)
             count++
         }
     }
-    if(count>=1)
+    if(count>1)
     {
       
        {

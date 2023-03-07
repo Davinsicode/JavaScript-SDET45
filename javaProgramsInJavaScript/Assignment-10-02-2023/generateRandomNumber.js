@@ -8,3 +8,4 @@ for(i=1; i<=10 ; i++)
 {
     console.log(num = (Math.round)(range*Math.random()+min));
 }
+u

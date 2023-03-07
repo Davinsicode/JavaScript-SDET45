@@ -1,11 +1,11 @@
 let stringvalue = "testyantra"
-// splittedvalue = stringvalue.split('')
-for(i=0; i<stringvalue.length; i++)
+splittedvalue = stringvalue.split('')
+for(i=0; i<splittedvalue.length; i++)
 {
     count = 0
-    for(j=0; j<stringvalue.length;j++)
+    for(j=0; j<splittedvalue.length;j++)
     {
-        if(stringvalue[i]==stringvalue[j])
+        if(splittedvalue[i]==splittedvalue[j])
         {
             if(j<i)
             {
@@ -14,13 +14,13 @@ for(i=0; i<stringvalue.length; i++)
             count++
         }
     }
-    if(count>1)
+    if(count==1)
     {
-        // console.log(stringvalue[i]);
+        console.log(splittedvalue[i]);
     }
-    else
+    /* else
      {
-        console.log(stringvalue[i]);
-     }
+        console.log(splittedvalue[i]);
+     } */
     
 }

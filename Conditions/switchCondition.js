@@ -1,4 +1,4 @@
-var age = 30
+var age = 20
 switch(age)
 {
     case 20 : console.log("Yes You can Book your Ticket")
